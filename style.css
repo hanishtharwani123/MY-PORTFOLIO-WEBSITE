@@ -1,0 +1,979 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@font-face {
+    font-family: centra;
+    src: url(CentraNo2-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'centra';
+    box-sizing: border-box;
+}
+
+
+body {
+    background: rgb(23, 22, 22);
+}
+
+
+/******************** HOME PAGE ********************/
+
+#header {
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    padding: 3.7vh 5.5%;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 3.24vw;
+    font-weight: 400;
+    color: white;
+    font-family: centra;
+}
+
+.nav-links li {
+    display: inline-block;
+    list-style: none;
+    cursor: pointer;
+    margin-top: 0.679vw;
+    margin-bottom: 0.679vw;
+    margin-right: 5.117vw;
+    margin-left: -3.051vw;
+    flex-direction: column;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18.8px;
+    font-family: centra;
+    background: transparent;
+    padding: 0.62vw 0.82vw;
+    border-radius: 0.34vw;
+    transition: all .2s ease-in-out;
+}
+
+.hov1:hover {
+    background: #e10a0a;
+    -moz-box-shadow: 0 0 .8rem #e10a0a;
+    -webkit-box-shadow: 0 0 .8rem #e10a0a;
+    box-shadow: 0 0 .8rem #e10a0a;
+}
+
+.hov2:hover {
+    background: #F7DF1E;
+    -moz-box-shadow: 0 0 .8rem #F7DF1E;
+    -webkit-box-shadow: 0 0 .8rem #F7DF1E;
+    box-shadow: 0 0 .8rem #F7DF1E;
+}
+
+.hov3:hover {
+    background: #61f62b;
+    -moz-box-shadow: 0 0 .8rem #61f62b;
+    -webkit-box-shadow: 0 0 .8rem #61f62b;
+    box-shadow: 0 0 .8rem #61f62b;
+}
+
+.hov4:hover {
+    background: #0634ff;
+    -moz-box-shadow: 0 0 .8rem #0634ff;
+    -webkit-box-shadow: 0 0 .8rem #0634ff;
+    box-shadow: 0 0 .8rem #0634ff;
+}
+
+.hov5:hover {
+    background: #06fff3;
+    -moz-box-shadow: 0 0 .8rem #06fff3;
+    -webkit-box-shadow: 0 0 .8rem #06fff3;
+    box-shadow: 0 0 .8rem #06fff3;
+}
+
+.social-links {
+    position: fixed;
+    top: 50%;
+    right: -16.2vw;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+i {
+    color: #000;
+}
+
+.social-links .fa {
+    width: 20vw;
+    padding: .7vw;
+    font-size: 2.2vw;
+    cursor: pointer;
+    transition: 0.5s ease;
+    font-family: centra;
+    color: #fff;
+}
+
+.social-links .fa:hover {
+    color: #fff;
+    transform: translateX(-8vw);
+}
+
+.fa.fa-brands.fa-twitter {
+    background: #f21d1d;
+}
+
+.fa.fa-brands.fa-linkedin {
+    background: #0006b5;
+}
+
+.fa.fa-brands.fa-github {
+    background: #454141;
+}
+
+.social-links .fa span {
+    position: relative;
+    font-size: 1.5vw;
+    bottom: 2.214px;
+    margin-left: 1.8vw;
+
+}
+
+/* 
+.btn {
+    position: relative;
+    left: 31vw;
+}
+
+.btn1 {
+    font-family: centra;
+    background: transparent;
+    color: white;
+    border: 0.06vw solid white;
+    border-radius: 0.6vw;
+    padding: 1.290vw 2.038vw;
+    cursor: pointer;
+    position: relative;
+    font-size: 1.223vw;
+}
+
+.hover {
+    background: #ffffff;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: .4s;
+    border-radius: 0.6vw;
+}
+
+.btn1:hover .hover {
+    width: 100%;
+}
+
+.btn1:hover {
+    color: black;
+    border: 0.06vw solid white;
+} */
+
+.main {
+    display: flex;
+}
+
+.container1 {
+    margin-top: 13.5vw;
+}
+
+.port {
+    color: white;
+    font-size: 1.359vw;
+    display: inline-block;
+    border: 0.068vw solid hsla(0, 0%, 100%, .5);
+    font-family: centra;
+    padding: .544vw .679vw;
+    margin-bottom: 1.087vw;
+    font-weight: 700;
+    letter-spacing: .8px;
+    background: #ff00e3
+}
+
+.text-typ {
+    display: block;
+    font-size: 4.4157vw;
+    line-height: 1;
+    margin-bottom: 1.36vw;
+    font-weight: 700;
+    letter-spacing: .8px;
+    font-family: centra;
+    color: #ffffff;
+}
+
+.text {
+    display: block;
+    font-size: 4.4157vw;
+    line-height: 1;
+    margin-bottom: 1.36vw;
+    font-weight: 700;
+    letter-spacing: .8px;
+    font-family: centra;
+    color: #ffffff;
+}
+
+
+
+.btn2 {
+    padding: .75vw 3.057vw;
+    font-size: 1.90vw;
+    font-family: centra;
+    color: white;
+    border: none;
+    margin-top: 0.68vw;
+    border-radius: 0.407vw;
+    cursor: pointer;
+    transition: .4s;
+    font-weight: bold;
+    background: #ff00e3;
+}
+
+
+.btn2:hover {
+    -moz-box-shadow: 0 0 12px #ff00e3;
+    -webkit-box-shadow: 0 0 12px #ff00e3;
+    box-shadow: 0 0 12px #ff00e3;
+}
+
+.anim-img {
+    width: 38.451vw;
+    margin-left: 46.9vw;
+    margin-top: 3.329vw;
+}
+
+.imag {
+    position: absolute;
+    display: flex;
+    width: 0%;
+}
+
+.hamburger {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    margin-left: 74.8vw;
+    position: fixed;
+    visibility: hidden;
+}
+
+.line {
+    width: 2rem;
+    height: 0.25rem;
+    background: rgb(255, 255, 255);
+    margin: 0.25rem;
+}
+
+.checkbtn {
+    font-size: 4.065vw;
+    color: rgb(255, 255, 255);
+    position: relative;
+    left: 80vw;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.fas.fa-bars {
+    color: white;
+}
+
+
+/******************** MAKING HOME PAGE RESPONSIVE ********************/
+
+@media screen and (max-width:800px) {
+
+
+    .logo {
+        font-size: 5vw;
+        position: relative;
+        left: -68.5vw;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    .navbar {
+        position: fixed;
+        background: #000;
+        width: 100%;
+        height: 10vh;
+        z-index: 1000;
+    }
+
+    .container {
+        padding: 0.1px 0%;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #ff00e3;
+        top: 70px;
+        left: 100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 1000;
+        display: inline-grid;
+        padding-top: 66px;
+        padding-bottom: 196px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 6.775vw 0;
+        line-height: 4.065vw;
+        position: relative;
+        left: 4vw;
+        position: relative;
+        height: 38px;
+    }
+
+
+    a:hover,
+    a:active {
+        background: none;
+        color: red;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    .main {
+        margin-top: 18vw;
+        flex-wrap: wrap;
+        margin-left: 5.4vw;
+    }
+
+    .container1 {
+        width: 100%;
+        z-index: 100;
+    }
+
+    .container1 p {
+        font-size: 5vw;
+        margin-left: 13vw;
+        margin-top: -13vw;
+    }
+
+    .text {
+        font-size: 11vw;
+        margin-left: 11vw;
+        margin-top: 4vw;
+    }
+
+    .text-typ {
+        font-size: 7.7vw;
+        margin-left: 5vw;
+        margin-top: 4vw;
+    }
+
+    .btn2 {
+        font-size: 5vw;
+        margin-left: 26vw;
+        margin-top: 8vw;
+    }
+
+    .social-links .fa {
+        width: 23vw;
+        padding: .7vw;
+        font-size: 5vw;
+    }
+
+    .imag {
+        display: none;
+    }
+}
+
+
+
+
+/******************** ABOUT PAGE ********************/
+
+#about {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.imga {
+    height: 32vw;
+    border: 5px solid #ff00e3;
+    border-radius: 6px;
+    transition: .4s;
+    -moz-box-shadow: 0 0 20px #ff00e3;
+    -webkit-box-shadow: 0 0 20px #ff00e3;
+    box-shadow: 0 0 25px #ff00e3;
+}
+
+.text-ai {
+    width: 38.5vw;
+    height: 35vw;
+    margin-left: -8vw;
+}
+
+
+.about-us {
+    font-size: 4.8vw;
+    color: rgb(228, 225, 225);
+    letter-spacing: 2px;
+    border-bottom: 1px solid #514f4f;
+}
+
+.about-us::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 17.84vw;
+    height: 3px;
+    background: #ff00e3;
+}
+
+.para {
+    font-size: 1.2vw;
+    color: #fff;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 1.1vw;
+}
+
+
+/******************** MAKING ABOUT PAGE RESPONSIVE ********************/
+
+@media screen and (max-width:800px) {
+    #about {
+        display: block;
+        position: relative;
+        top: 25vw;
+        left: 28vw;
+        width: 0;
+    }
+
+    .imga {
+        height: 46vw;
+    }
+
+    .text-ai {
+        margin-top: 15vw;
+        width: 59vw;
+    }
+
+    .about-us {
+        border-bottom: none;
+        font-size: 7.9vw;
+        text-align: center;
+    }
+
+    .about-us::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 58vw;
+        height: 3px;
+        background: #ff00e3;
+
+    }
+
+    .para {
+        font-size: 2.6vw;
+        margin-top: 3vw;
+        text-align: center;
+    }
+}
+
+
+/******************** SKILLS PAGE ********************/
+
+#skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.my-skills {
+    color: rgb(228, 225, 225);
+    font-size: 4.8vw;
+    letter-spacing: 1px;
+    margin-bottom: 3.9vw;
+    border-bottom: 1px solid #514f4f;
+}
+
+.my-skills::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 37.84vw;
+    height: 3px;
+    background: #ff00e3;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 5vw;
+    grid-template-columns: auto auto auto auto;
+}
+
+.card-1 {
+    background: transparent;
+    height: 12vw;
+    width: 13.6vw;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 0.18vw solid #ff00e3;
+    transition: transform .5s ease-out;
+    -moz-box-shadow: 0 0 20px #ff00e3;
+    -webkit-box-shadow: 0 0 20px #ff00e3;
+    box-shadow: 0 0 1.63vw #ff00e3;
+    border-radius: 5px;
+}
+
+.card-1:hover {
+    transform: scale(1.1);
+}
+
+.icon-img {
+    width: 6.793vw;
+}
+
+.icon-name {
+    color: rgb(255, 255, 255);
+    font-size: 1.222vw;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+/******************** MAKING SKILLS PAGE RESPONSIVE ********************/
+
+@media screen and (max-width:800px) {
+    #skills {
+        margin-top: 93vw;
+    }
+
+    .grid {
+        display: grid;
+        grid-gap: 8vw;
+        grid-template-columns: auto auto;
+    }
+
+    .my-skills {
+        color: rgb(228, 225, 225);
+        font-size: 8.9vw;
+        border-bottom: 1px solid #514f4f;
+        text-align: center;
+    }
+
+    .my-skills::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 49.1vw;
+        height: 3px;
+        background: #ff00e3;
+    }
+
+    .card-1 {
+        height: 17vw;
+        width: 20.6vw;
+    }
+
+    .card-1:hover {
+        transform: scale(1.05);
+    }
+
+    .icon-img {
+        width: 9.793vw;
+    }
+
+    .icon-name {
+        font-size: 2.222vw;
+    }
+}
+
+
+/******************** PROJECT PAGE ********************/
+
+#project {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 {
+    margin-top: 10vw;
+}
+
+.my-project {
+    font-size: 4.8vw;
+    color: rgb(228, 225, 225);
+    text-align: center;
+    margin-bottom: 4vw;
+
+}
+
+.grid-project {
+    display: grid;
+    grid-row-gap: 9vw;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 5vw;
+}
+
+.card-2 {
+    width: 27vw;
+    height: 23vw;
+    background: transparent;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 1vw;
+    position: relative;
+}
+
+.project-img {
+    width: 28vw;
+    height: 19vw;
+    border-radius: 2vw;
+    display: block;
+}
+
+.project-name {
+    font-size: 1.6vw;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.link-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-git {
+    background: #fff;
+    color: #000;
+    border-radius: 0.4vw;
+    padding: 0.26vw;
+    border: none;
+    font-size: 1.03vw;
+    cursor: pointer;
+    transition: .4s;
+    border: 0.27100vw solid white;
+}
+
+.btn-git:hover {
+    background: #ff67e100;
+    border: 0.27100vw solid white;
+    color: white;
+}
+
+
+.word {
+    width: 28vw;
+    height: 19vw;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2vw;
+    transition: transform 0.5s;
+    box-shadow: 0 0 20px #ff00e3;
+    border: 0.27100vw solid #ff00e3;
+}
+
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgb(42, 223, 255), #ff00e3);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 5.4200vw;
+    text-align: center;
+    transition: height 0.5s;
+    font-size: 1.897vw;
+}
+
+.about-project {
+    color: #fff;
+    font-size: 1.07vw;
+    font-family: 'Poppins', sans-serif;
+}
+
+.layer .link-site {
+    margin-top: 20px;
+    color: #ff00e3;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 41px;
+    background: #fff;
+    width: 43px;
+    height: 41px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.word:hover .layer {
+    height: 100%;
+}
+
+
+/******************** MAKING PROJECT PAGE RESPONSIVE ********************/
+
+@media screen and (max-width:800px) {
+
+    #project {
+        margin-top: 25vw;
+    }
+
+    .grid-project {
+        display: grid;
+        grid-row-gap: 18vw;
+        grid-template-columns: auto auto;
+        grid-column-gap: 18vw;
+    }
+
+    .my-project {
+        font-size: 8.9vw;
+        margin-bottom: 9vw;
+    }
+
+    .word {
+        width: 35vw;
+        height: 24vw;
+    }
+
+    .project-img {
+        width: 35vw;
+        height: 24vw;
+    }
+
+
+    .project-name {
+        font-size: 2.5vw;
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .btn-git {
+        padding: 0.5vw;
+        font-size: 1.4vw;
+    }
+
+}
+
+
+
+/******************** CONTACT PAGE ********************/
+
+#contact-us {
+    width: 100%;
+    height: 140vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: -6vw;
+}
+
+.us {
+    margin-bottom: 2vw;
+}
+
+.send {
+    font-size: 4.3vw;
+    font-family: centra;
+    color: rgb(228, 225, 225);
+}
+
+input,
+textarea {
+    padding: 1.5vw 2vw;
+    width: 40vw;
+    border-radius: 1vw;
+    margin-bottom: 2.5vw;
+    outline: none;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.leave {
+    padding: 0.5vw 4.3vw;
+    border: none;
+    font-size: 2.2vw;
+    border-radius: 5px;
+    background: #ff00e3;
+    color: white;
+    cursor: pointer;
+    transition: .4s;
+    font-weight: bold;
+}
+
+.leave:hover {
+    -moz-box-shadow: 0 0 12px #ff00e3;
+    -webkit-box-shadow: 0 0 12px #ff00e3;
+    box-shadow: 0 0 20px #ff00e3;
+
+}
+
+input,
+textarea::placeholder {
+    font-size: 1vw;
+    font-family: 'Poppins', sans-serif;
+}
+
+.message-man {
+    width: 35vw;
+    height: 35vw;
+    border-radius: 1vw;
+    border: 3px solid #ff00e3;
+    margin-top: -2vw;
+    box-shadow: 0 0 15px #ff00e3;
+}
+
+
+/******************** MAKING CONTACT PAGE RESPONSIVE ********************/
+
+@media screen and (max-width:800px) {
+    .message-man {
+        display: none;
+    }
+
+    .cen {
+        margin-left: 8.5vw;
+    }
+
+    .send {
+        font-size: 7.4vw;
+    }
+
+    input,
+    textarea {
+        padding: 3.5vw 3vw;
+        width: 70vw;
+
+    }
+
+    input,
+    textarea::placeholder {
+        font-size: 2vw;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .leave {
+        padding: 1.5vw 7.3vw;
+        border: none;
+        font-size: 4.2vw;
+        border-radius: .8rem;
+        background: #ff00e3;
+        color: white;
+        cursor: pointer;
+        transition: .4s;
+        font-weight: bold;
+    }
+}
+
+
+/******************** FOOTER PAGE ********************/
+
+#footer {
+    width: 100%;
+    height: 25vh;
+    background: #ff00e3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot {
+    font-size: 4.3vw;
+    color: #fff;
+    padding-left: 4vw;
+    transition: .6s;
+}
+
+.foot:hover {
+    color: #0634ff;
+}
+
+.copy {
+    font-size: 1.2vw;
+    color: #fff;
+    padding-right: 2vw
+}
+
+
+/******************** MAKING RESPONSIVE FOR SMALL SCREEN ********************/
+
+@media screen and (max-width:550px) {
+
+
+    #about {
+        display: block;
+        position: relative;
+        top: -19vw;
+        left: 28vw;
+        width: 0;
+    }
+
+    #skills {
+        margin-top: -25vw;
+    }
+
+    #project {
+        position: relative;
+        top: -28vw;
+
+    }
+
+    #contact-us {
+        height: 80vh;
+        margin-top: 40vw;
+    }
+
+    .foot {
+        font-size: 7vw;
+    }
+
+    .copy {
+        font-size: 2.5vw;
+    }
+
+    .cen {
+        margin-top: -98vw;
+    }
+}
