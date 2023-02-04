@@ -110,37 +110,42 @@ body {
 }
 
 i {
-    color: #000;
+    color: rgb(255, 255, 255);
 }
 
-.social-links .fa {
+.social-links a {
+    cursor: pointer;
+    font-family: centra;
+    color: #fff;
+    display: block;
+}
+
+.social-links .fab {
+    transition: 0.5s ease;
     width: 20vw;
     padding: .7vw;
     font-size: 2.2vw;
-    cursor: pointer;
-    transition: 0.5s ease;
-    font-family: centra;
-    color: #fff;
 }
 
-.social-links .fa:hover {
+.social-links .fab:hover {
     color: #fff;
     transform: translateX(-8vw);
 }
 
-.fa.fa-brands.fa-twitter {
+.fab.fa-twitter {
     background: #f21d1d;
+
 }
 
-.fa.fa-brands.fa-linkedin {
+.fab.fa-linkedin {
     background: #0006b5;
 }
 
-.fa.fa-brands.fa-github {
+.fab.fa-github {
     background: #454141;
 }
 
-.social-links .fa span {
+.social-links .fab span {
     position: relative;
     font-size: 1.5vw;
     bottom: 2.214px;
@@ -401,7 +406,7 @@ i {
         margin-top: 8vw;
     }
 
-    .social-links .fa {
+    .social-links .fab {
         width: 23vw;
         padding: .7vw;
         font-size: 5vw;
@@ -578,7 +583,7 @@ i {
 
 @media screen and (max-width:800px) {
     #skills {
-        margin-top: 93vw;
+        margin-top: 120vw;
     }
 
     .grid {
@@ -740,7 +745,7 @@ i {
     text-decoration: none;
     font-size: 15px;
     line-height: 41px;
-    background: #fff;
+    background: rgb(0, 0, 0);
     width: 43px;
     height: 41px;
     border-radius: 50%;
@@ -951,7 +956,7 @@ textarea::placeholder {
     }
 
     #skills {
-        margin-top: -25vw;
+        margin-top: 15vw;
     }
 
     #project {
@@ -975,5 +980,214 @@ textarea::placeholder {
 
     .cen {
         margin-top: -98vw;
+    }
+}
+
+
+/******************** MAKING RESPONSIVE FOR SMALL MOBILE SCREEN ********************/
+@media screen and (max-width:460px) {
+    .logo {
+        font-size: 6vw;
+        position: relative;
+        left: -66.5vw;
+    }
+
+    .social-links .fa {
+        width: 25vw;
+        padding: 1.7vw;
+        font-size: 6vw;
+    }
+
+    .main {
+        margin-top: 29vw;
+        flex-wrap: wrap;
+        margin-left: 5.4vw;
+    }
+
+    .btn2 {
+        font-size: 7vw;
+        margin-left: 23vw;
+        margin-top: 8vw;
+    }
+
+    #about {
+        display: block;
+        position: relative;
+        top: -50vw;
+        left: 22vw;
+        width: 0;
+    }
+
+    .imga {
+        height: 59vw;
+    }
+
+    .text-ai {
+        margin-top: 15vw;
+        width: 73vw;
+    }
+
+    .about-us {
+        border-bottom: none;
+        font-size: 10.9vw;
+        text-align: center;
+    }
+
+    .about-us::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 72vw;
+        height: 3px;
+        background: #ff00e3;
+    }
+
+    .para {
+        font-size: 3.6vw;
+        margin-top: 3vw;
+        text-align: center;
+    }
+
+    #skills {
+        margin-top: 11vw;
+    }
+
+    .my-skills {
+        color: rgb(228, 225, 225);
+        font-size: 10.9vw;
+        border-bottom: 1px solid #514f4f;
+        text-align: center;
+    }
+
+    .my-skills::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 77.1vw;
+        height: 3px;
+        background: #ff00e3;
+    }
+
+    .grid {
+        display: grid;
+        grid-gap: 8vw;
+        grid-template-columns: auto auto;
+    }
+
+    .card-1 {
+        height: 28vw;
+        width: 34.6vw;
+    }
+
+    .icon-img {
+        width: 16.793vw;
+    }
+
+    .icon-name {
+        font-size: 3.222vw;
+    }
+
+    #project {
+        position: relative;
+        top: -19vw;
+    }
+
+    .my-project {
+        font-size: 10.9vw;
+        margin-bottom: 10vw;
+    }
+
+    .grid-project {
+        display: grid;
+        grid-row-gap: 50vw;
+        grid-template-columns: auto;
+        grid-column-gap: 20vw;
+        justify-content: center;
+    }
+
+    .project-img {
+        width: 70vw;
+        height: 48vw;
+    }
+
+    .word {
+        width: 70vw;
+        height: 48vw;
+    }
+
+    .layer {
+        font-size: 3.897vw;
+    }
+
+    .project-name {
+        font-size: 4vw;
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .btn-git {
+        padding: 0.5vw;
+        font-size: 3.4vw;
+    }
+
+    #contact-us {
+        height: 80vh;
+        margin-top: 76vw;
+    }
+
+    .send {
+        font-size: 8.4vw;
+        text-align: center;
+    }
+
+    input,
+    textarea::placeholder {
+        font-size: 4vw;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    input,
+    textarea {
+        padding: 6.5vw 4vw;
+        width: 75vw;
+    }
+
+    .leave {
+        padding: 2.5vw 10.3vw;
+        border: none;
+        font-size: 5.2vw;
+        border-radius: -0.2rem;
+        background: #ff00e3;
+        color: white;
+        cursor: pointer;
+        transition: .4s;
+        font-weight: bold;
+    }
+
+    #footer {
+        width: 100%;
+        height: 14vh;
+        background: #ff00e3;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .social-links .fab {
+        width: 24.9vw;
+        padding: 1.9vw;
+        font-size: 6vw;
+    }
+
+    .fa-bars:before {
+        content: "\f0c9";
+        font-size: 6vw;
+        margin-left: 2vw;
+    }
+
+    .about-project {
+        color: #fff;
+        font-size: 3.1vw;
+        font-family: 'Poppins', sans-serif;
     }
 }
