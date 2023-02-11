@@ -33,6 +33,7 @@
                     <li><a class="hov4" href="#project">Projects</a></li>
                     <li><a class="hov5" href="#contact-us">Contact Me</a></li>
                 </ul>
+                <img src="images/sun.png" id="icon">
                 <div class="social-links">
                     <a href="https://twitter.com/TharwaniHanish"><i
                             class="fab fa-twitter"><span>Twitter</span></i><br></a>
@@ -289,7 +290,17 @@
             typeSpeed: 150,
             backSpeed: 150,
             loop: true
-        })  
+        })
+
+        let icon = document.getElementById("icon");
+        icon.addEventListener('click', () => {
+            let white = document.body.classList.toggle('white-theme');
+            if (document.body.classList.contains('white-theme')) {
+                icon.src = 'images/moon.png';
+            } else {
+                icon.src = 'images/sun.png';
+            }
+        })
     </script>
 </body>
 

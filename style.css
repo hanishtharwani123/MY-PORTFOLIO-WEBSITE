@@ -12,11 +12,25 @@
     box-sizing: border-box;
 }
 
-
-body {
-    background: rgb(23, 22, 22);
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: rgb(228, 225, 225);
+    --tertiary-color: rgb(23, 22, 22);
+    --fourth-color: #000;
 }
 
+.white-theme {
+    --primary-color: #312828;
+    --secondary-color: #312828;
+    --tertiary-color: rgb(255, 231, 248);
+    --fourth-color: #ffffff;
+}
+
+
+body {
+    background: var(--tertiary-color);
+    transition: .4s;
+}
 
 /******************** HOME PAGE ********************/
 
@@ -40,8 +54,13 @@ body {
 .logo {
     font-size: 3.24vw;
     font-weight: 400;
-    color: white;
+    color: var(--primary-color);
     font-family: centra;
+}
+
+.navbar ul {
+    flex: 1;
+    text-align: right;
 }
 
 .nav-links li {
@@ -56,14 +75,21 @@ body {
 }
 
 .nav-links li a {
-    color: #fff;
+    color: var(--primary-color);
     text-decoration: none;
-    font-size: 18.8px;
+    font-size: 18.3px;
     font-family: centra;
     background: transparent;
     padding: 0.62vw 0.82vw;
     border-radius: 0.34vw;
     transition: all .2s ease-in-out;
+}
+
+#icon {
+    width: 24px;
+    cursor: pointer;
+    color: var(--primary-color);
+    margin-left: -33px;
 }
 
 .hov1:hover {
@@ -221,7 +247,7 @@ i {
     font-weight: 700;
     letter-spacing: .8px;
     font-family: centra;
-    color: #ffffff;
+    color: var(--primary-color);
 }
 
 .text {
@@ -232,7 +258,7 @@ i {
     font-weight: 700;
     letter-spacing: .8px;
     font-family: centra;
-    color: #ffffff;
+    color: var(--primary-color);
 }
 
 
@@ -293,7 +319,7 @@ i {
     font-size: 4.065vw;
     color: rgb(255, 255, 255);
     position: relative;
-    left: 80vw;
+    left: 86vw;
     line-height: 80px;
     cursor: pointer;
     display: none;
@@ -316,7 +342,8 @@ i {
     .logo {
         font-size: 5vw;
         position: relative;
-        left: -68.5vw;
+        left: -34vw;
+        color: #fff;
     }
 
     .checkbtn {
@@ -331,6 +358,11 @@ i {
         z-index: 1000;
     }
 
+    #icon {
+        position: relative;
+        right: 20vw;
+    }
+
     .container {
         padding: 0.1px 0%;
     }
@@ -342,22 +374,23 @@ i {
         background: #ff00e3;
         top: 70px;
         left: 100%;
-        text-align: center;
         transition: all .5s;
         z-index: 1000;
-        display: inline-grid;
+        display: grid;
+        justify-content: center;
+        align-items: center;
         padding-top: 66px;
         padding-bottom: 196px;
     }
 
     nav ul li {
-        display: block;
         margin: 6.775vw 0;
         line-height: 4.065vw;
         position: relative;
         left: 4vw;
         position: relative;
         height: 38px;
+        text-align: center;
     }
 
 
@@ -449,7 +482,7 @@ i {
 
 .about-us {
     font-size: 4.8vw;
-    color: rgb(228, 225, 225);
+    color: var(--secondary-color);
     letter-spacing: 2px;
     border-bottom: 1px solid #514f4f;
 }
@@ -465,7 +498,7 @@ i {
 
 .para {
     font-size: 1.2vw;
-    color: #fff;
+    color: var(--primary-color);
     letter-spacing: 1px;
     font-family: 'Poppins', sans-serif;
     margin-top: 1.1vw;
@@ -527,7 +560,7 @@ i {
 }
 
 .my-skills {
-    color: rgb(228, 225, 225);
+    color: var(--secondary-color);
     font-size: 4.8vw;
     letter-spacing: 1px;
     margin-bottom: 3.9vw;
@@ -556,7 +589,7 @@ i {
     display: grid;
     justify-content: center;
     align-items: center;
-    border: 0.18vw solid #ff00e3;
+    border: 0.24vw solid #ff00e3;
     transition: transform .5s ease-out;
     -moz-box-shadow: 0 0 20px #ff00e3;
     -webkit-box-shadow: 0 0 20px #ff00e3;
@@ -573,7 +606,7 @@ i {
 }
 
 .icon-name {
-    color: rgb(255, 255, 255);
+    color: var(--primary-color);
     font-size: 1.222vw;
     text-align: center;
     font-family: 'Poppins', sans-serif;
@@ -593,7 +626,7 @@ i {
     }
 
     .my-skills {
-        color: rgb(228, 225, 225);
+        color: var(--secondary-color);
         font-size: 8.9vw;
         border-bottom: 1px solid #514f4f;
         text-align: center;
@@ -643,7 +676,7 @@ i {
 
 .my-project {
     font-size: 4.8vw;
-    color: rgb(228, 225, 225);
+    color: var(--secondary-color);
     text-align: center;
     margin-bottom: 4vw;
 
@@ -676,7 +709,7 @@ i {
 
 .project-name {
     font-size: 1.6vw;
-    color: #fff;
+    color: var(--primary-color);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -686,21 +719,21 @@ i {
 }
 
 .btn-git {
-    background: #fff;
-    color: #000;
+    background: var(--primary-color);
+    color: var(--fourth-color);
     border-radius: 0.4vw;
     padding: 0.26vw;
     border: none;
     font-size: 1.03vw;
     cursor: pointer;
     transition: .4s;
-    border: 0.27100vw solid white;
+    border: 0.20100vw solid var(--primary-color);
 }
 
 .btn-git:hover {
-    background: #ff67e100;
-    border: 0.27100vw solid white;
-    color: white;
+    background: transparent;
+    border: 0.20100vw solid var(--primary-color);
+    color: var(--primary-color);
 }
 
 
@@ -790,7 +823,7 @@ i {
 
     .project-name {
         font-size: 2.5vw;
-        color: #fff;
+        color: var(--primary-color);
         font-family: 'Poppins', sans-serif;
     }
 
@@ -821,7 +854,7 @@ i {
 .send {
     font-size: 4.3vw;
     font-family: centra;
-    color: rgb(228, 225, 225);
+    color: var(--secondary-color);
 }
 
 input,
@@ -832,8 +865,8 @@ textarea {
     margin-bottom: 2.5vw;
     outline: none;
     background: transparent;
-    border: 1px solid white;
-    color: white;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
 }
 
 .leave {
@@ -867,7 +900,7 @@ textarea::placeholder {
     border-radius: 1vw;
     border: 3px solid #ff00e3;
     margin-top: -2vw;
-    box-shadow: 0 0 15px #ff00e3;
+    box-shadow: 0 0 19px #ff00e3;
 }
 
 
@@ -989,7 +1022,6 @@ textarea::placeholder {
     .logo {
         font-size: 6vw;
         position: relative;
-        left: -66.5vw;
     }
 
     .social-links .fa {
@@ -1053,7 +1085,6 @@ textarea::placeholder {
     }
 
     .my-skills {
-        color: rgb(228, 225, 225);
         font-size: 10.9vw;
         border-bottom: 1px solid #514f4f;
         text-align: center;
@@ -1121,7 +1152,6 @@ textarea::placeholder {
 
     .project-name {
         font-size: 4vw;
-        color: #fff;
         font-family: 'Poppins', sans-serif;
     }
 
@@ -1158,7 +1188,6 @@ textarea::placeholder {
         font-size: 5.2vw;
         border-radius: -0.2rem;
         background: #ff00e3;
-        color: white;
         cursor: pointer;
         transition: .4s;
         font-weight: bold;
@@ -1186,7 +1215,6 @@ textarea::placeholder {
     }
 
     .about-project {
-        color: #fff;
         font-size: 3.1vw;
         font-family: 'Poppins', sans-serif;
     }
