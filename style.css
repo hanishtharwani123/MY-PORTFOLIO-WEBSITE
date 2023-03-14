@@ -22,7 +22,7 @@
 .white-theme {
     --primary-color: #312828;
     --secondary-color: #312828;
-    --tertiary-color: rgb(255, 231, 248);
+    --tertiary-color: rgb(255, 249, 253);
     --fourth-color: #ffffff;
 }
 
@@ -593,7 +593,7 @@ i {
     transition: transform .5s ease-out;
     -moz-box-shadow: 0 0 20px #ff00e3;
     -webkit-box-shadow: 0 0 20px #ff00e3;
-    box-shadow: 0 0 1.63vw #ff00e3;
+    box-shadow: 0 0 1.22vw #ff00e3;
     border-radius: 5px;
 }
 
