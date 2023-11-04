@@ -703,6 +703,10 @@ i {
 .project-img {
     width: 28vw;
     height: 19vw;
+<<<<<<< HEAD
+=======
+    border-radius: 2vw;
+>>>>>>> 3a1652b9a3e7e10ab1aad65346092e1d160046ab
     display: block;
 }
 
