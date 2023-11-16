@@ -612,6 +612,10 @@ i {
     font-family: 'Poppins', sans-serif;
 }
 
+.box {
+    margin-top: 270px;
+}
+
 /******************** MAKING SKILLS PAGE RESPONSIVE ********************/
 
 @media screen and (max-width:800px) {
@@ -671,7 +675,7 @@ i {
 }
 
 .box1 {
-    margin-top: 10vw;
+    margin-top: 160px;
 }
 
 .my-project {
@@ -703,11 +707,8 @@ i {
 .project-img {
     width: 28vw;
     height: 19vw;
-<<<<<<< HEAD
-=======
-    border-radius: 2vw;
->>>>>>> 3a1652b9a3e7e10ab1aad65346092e1d160046ab
-    display: block;
+    <<<<<<< HEAD=======border-radius: 2vw;
+    >>>>>>>3a1652b9a3e7e10ab1aad65346092e1d160046ab display: block;
 }
 
 .project-name {
