@@ -1,4 +1,4 @@
-# Portfolio Website
+# Portfolio Websit
 
 Welcome to the repository of my personal portfolio website! This website showcases my skills, projects, and provides information about me. It is built using HTML, CSS, and JavaScript, and is designed to be fully responsive across different devices.
 
